@@ -14,6 +14,16 @@ function Button() {
         setcount(count -1);
     };
 
+    const handleCounter=(action, count) => {
+        if (action === 'increment') {
+          return count + 1;
+        } else if (action === 'decrement') {
+          return count - 1;
+        } else {
+          return count; 
+        }
+      };
+
 
 return (
     <div>
